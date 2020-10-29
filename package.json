@@ -2,7 +2,7 @@
   "main": "lib/index.js",
   "type": "module",
   "slug": "common/temp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "remote": "StandartHentaPlugins/temp",
   "scripts": {
     "build": "tsc --project tsconfig.json",
