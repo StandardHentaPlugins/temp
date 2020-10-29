@@ -1,7 +1,14 @@
 {
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "type": "module",
   "slug": "common/temp",
   "version": "1.0.1",
-  "remote": "StandartHentaPlugins/temp"
+  "remote": "StandartHentaPlugins/temp",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "release-it": "yarn version --patch && git push --follow-tags"
+  },
+  "devDependencies": {
+    "@types/node": "^13.13.0"
+  }
 }

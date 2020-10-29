@@ -1,7 +1,9 @@
-import path from 'path';
-import fs from 'fs';
+import * as path from 'path';
+import * as fs from 'fs';
 
 class TempPath {
+  plugin: any;
+  str: any;
   constructor(plugin, str) {
     this.plugin = plugin;
     this.str = str;
@@ -14,6 +16,7 @@ class TempPath {
 
 export default class TempPlugin {
   tempPaths = {}
+  henta: any;
 
   constructor(henta) {
     this.henta = henta;
